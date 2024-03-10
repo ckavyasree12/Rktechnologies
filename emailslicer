@@ -1,0 +1,6 @@
+def email_sl(m):
+    username,domain=m.split('@')
+    return f"Your username is {username} & domain is {domain}"
+    
+m=input("Enter your email : ")
+print(email_sl(m))
