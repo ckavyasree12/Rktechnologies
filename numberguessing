@@ -1,0 +1,12 @@
+import random
+secret_num = random.randint(0,100)
+guess = 1
+while guess != secret_num:
+    guess = int(input("Guess the number: "))
+    if(guess < secret_num):
+        print("Try Again! Your guess was too small")
+    elif(guess > secret_num):
+        print("Try Again! Your guess was too high.")
+    else:
+        print("Congratulations! You guessed the correct number!")
+print("Better Luck Next Time!")
